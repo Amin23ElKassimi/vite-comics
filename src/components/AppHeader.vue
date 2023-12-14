@@ -1,8 +1,15 @@
 <template lang="">
     <header>
-        <h1>
-            Header
-        </h1>
+        <section class="logo">
+            <img src="../assets/buy-comics-digital-comics.png" alt="">
+        </section>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    home
+                </li>
+            </ul>
+        </nav>
     </header>
 </template>
 <script>
@@ -11,6 +18,6 @@ export default {
     
 } 
 </script>
-<style lang="">
+<style lang="scss" scoped>
     
 </style>

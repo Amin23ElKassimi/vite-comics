@@ -15,18 +15,21 @@ export default {
   
 }
 </script>
+
 <!-- HTML Code -->
 <template lang="">
-
+<!-- Component Header -->
 <AppHeader/>
-
+<!-- Component Main -->
 <AppMain/>
- 
+ <!-- Component Footer -->
 <AppFooter/>
-
 </template>
+
 <!-- SASS Code -->
-<style lang="">
+<style lang="scss">
+  @use './scss/general.scss' as *;
+
   
 </style>
  
