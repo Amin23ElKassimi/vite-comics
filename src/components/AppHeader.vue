@@ -1,3 +1,4 @@
+<!-- HTM & Vue -->
 <template lang="">
     <header>
         <div id="container">
@@ -14,6 +15,8 @@
         </div>
     </header>
 </template>
+
+<!-- JAvaScript -->
 <script>
 export default {
     name: 'AppHeader',
@@ -76,6 +79,8 @@ export default {
     
 } 
 </script>
+
+<!-- Sass -->
 <style lang="scss" scoped>
 
     // Use StyleSheets
