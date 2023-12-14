@@ -10,3 +10,11 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+// My Wrapper to add to all container
+@mixin my-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 20px;  
+}
