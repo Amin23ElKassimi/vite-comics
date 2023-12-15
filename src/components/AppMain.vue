@@ -1,13 +1,15 @@
+<!-- HTML & VUE3 -->
 <template lang="">
     <main>
+
         <!-- Section 01 -->
         <section class="content">
             <div id="container">
-                <h1>
-                    Content Gooes Here                    
-                </h1>
+                <!-- Serie -->
+                <AppListSeries/>
             </div>
          </section>
+
          <!-- Section 02 -->
          <section class="cards">
             <div id="container"> 
@@ -16,20 +18,24 @@
                 </h1>
             </div>
          </section>
-        <!-- Section 03 -->
-         <section class="meta">
-            <div id="container">
-                <h1>
-                    Content Gooes Here                    
-                </h1>
-            </div>
-         </section>
 
     </main>
 </template>
+
+<!-- JavaScript -->
 <script>
+
+// Import Del figlio
+import AppListSeries from './AppListSeries.vue';
+
 export default {
+
     name: 'AppMain',
+
+    // Dichiarare componet
+    components: {
+        AppListSeries
+    }
     
 }
 </script>
@@ -50,15 +56,8 @@ export default {
         @include my-wrapper();
         @include flex(column,center,start);
     }
-
     .cards{
         background-color: #0282f9;
-    }
-
-    .meta{
-        background-image: url(../assets/img/footer-bg.jpg);
-        height: 300px;
-        object-fit: contain;
     }
 
     h1{
