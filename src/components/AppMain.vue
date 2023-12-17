@@ -4,6 +4,9 @@
         <!-- Section 01 -->
         <section id="bg-teentitans">
             <img src="../assets/img/jumbotron.jpg" alt="">
+            <div id="current-series-button">
+                <a href="#">CURRENT SERIES</a>
+            </div>
         </section>
         <!-- Section 01 -->
         <section class="container">
@@ -49,6 +52,7 @@ export default {
     main{
         background-color: $main-color;
         color: white;
+        position: relative;
     }
 
     #bg-teentitans {
@@ -67,6 +71,21 @@ export default {
     }
     .cards{
         background-color: #0282f9;
+    }
+
+    #current-series-button{
+        background-color: #0282f9;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2rem;
+        width: 270px;
+        text-align: center;
+        position: absolute;
+        top: 485px;
+        left: 150px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
     }
 
     h1{

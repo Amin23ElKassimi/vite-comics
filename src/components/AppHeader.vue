@@ -91,7 +91,7 @@ export default {
     #container {
         width: 80%;
         margin: 0 auto;
-        padding: 1rem;
+        margin: 0 1rem;
         @include flex(row,space-between,center);
     }
 
@@ -106,11 +106,14 @@ export default {
 
     li{
         font-size: 1.2rem;
-        padding: 2rem 1rem;
+        padding: 3rem 1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: uppercase;
         &:hover{
-            color: blue;
-            background-color: antiquewhite;
+            color: #0282f9;
+            border-bottom: 5px solid #0282f9;
         }
+        
     }
     
 </style>
