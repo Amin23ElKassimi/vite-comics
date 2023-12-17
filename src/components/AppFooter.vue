@@ -5,30 +5,57 @@
         <!-- Meta  -->
          <section class="meta">
             <div id="container">
-            <nav id="pastificio">
-                <h2>
-                    DC COMICS
-                </h2>
-                <ul>
-                    <li><a href="#">Il Pastificio</a></li>
-                    <li><a href="#">Grano</a></li>
-                    <li><a href="#">Filiera</a></li>
-                    <li><a href="#">100 anni di pasta</a></li>
-                    <li><a href="#">Sartoria della pasta</a></li>
-                </ul>
-            </nav>
-            <nav id="prodotti">
-                <h2>
-                    SHOP
-                </h2>
-                <ul>
-                    <li><a href="#">Le classiche</a></li>
-                    <li><a href="#">Le Integrali</a></li>
-                    <li><a href="#">Le Speciali</a></li>
-                    <li><a href="#">Le Biologiche</a></li>
-                    <li><a href="#">Le Gluten-free</a></li>
-                </ul>
-            </nav>
+                <div>
+                    <!-- DC Comics & SHOP -->
+                    <div>
+                        <nav id="dccomicslinks">
+                            <h2>
+                                DC COMICS
+                            </h2>
+                            <ul>
+                                <li v-for="(link, index) in dcComicsLinks" >
+                                {{ link.content}}
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav id="shoplinks">
+                            <h2>
+                                SHOP
+                            </h2>
+                            <ul>
+                                <li v-for="(link, index) in shopLinks" >
+                                {{ link.content}}
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- DC -->
+                    <div>
+                        <nav id="dclinks">
+                            <h2>
+                                DC
+                            </h2>
+                            <ul>
+                                <li v-for="(link, index) in dcComicsLinks" >
+                                {{ link.content}}
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Sites -->
+                    <div>
+                        <nav id="siteslinks">
+                            <h2>
+                                SITES
+                            </h2>
+                            <ul>
+                                <li v-for="(link, index) in shopLinks" >
+                                {{ link.content}}
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
          </section>
 
@@ -50,7 +77,108 @@ export default {
     // Data
     data() {
         return {
-            navLinks: [
+            dcComicsLinks: [
+                {
+                    content: 'charters',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'comics',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'movies',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'tv',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'games',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'videos',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'news',
+                    url: '#',
+                    active: false,
+                },
+            ],
+            shopLinks: [
+                {
+                    content: 'Shop DC',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'Shop DC Collectibles',
+                    url: '#',
+                    active: false,
+                },
+            ],
+            dcLinks: [
+                {
+                    content: 'charters',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'comics',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'movies',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'tv',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'games',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'collectibles',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'videos',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'fans',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'news',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'shop',
+                    url: '#',
+                    active: false,
+                },
+            ],
+            sitesLinks: [
                 {
                     content: 'charters',
                     url: '#',
@@ -124,6 +252,14 @@ export default {
         @include my-wrapper();
         @include flex(column,center,start);
         top: 50%;
+
+        >div{
+            display: flex;
+            width: 100%;
+        }
+        nav{
+            margin: 0 3rem 0 0 ;
+        }
     }
     .meta{
         background-image: url(../assets/img/footer-bg.jpg);
