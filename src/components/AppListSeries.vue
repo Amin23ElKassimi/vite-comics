@@ -26,7 +26,7 @@ export default {
                             "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
                             "price": "$19.99",
                             "series": "Action Comics",
-                            "": "comic book",
+                            "type": "graphic novel",
                         },
                         {
                             "thumb": "https://www.panini.it/media/catalog/product/cache/a5b5dd3adfe0d321084804c738f29601/M/1/M1BLLA015ISBN_0.jpg",
@@ -61,13 +61,13 @@ export default {
                         {
                             "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/0/0d/Batman_Superman_Vol_1_1.jpg",
                             "price": "$3.99",
-                            "series": "Batman/Superman",
+                            "series": "Batman Superman",
                             "type": "comic book",
                         },
                         {
                             "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/c/cf/Batman_Superman_Annual_Vol_2_1.jpg",
                             "price": "$4.99",
-                            "series": "Batman/Superman Annual",
+                            "series": "Batman Superman Annual",
                             "type": "comic book",
                         },
                         {

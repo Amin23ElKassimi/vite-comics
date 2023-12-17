@@ -1,6 +1,6 @@
 <!-- HTM & Vue -->
 <template lang="">
-    <main>
+    <footer>
 
         <!-- Meta  -->
          <section class="meta">
@@ -39,7 +39,7 @@
             </div>
          </section>
 
-    </main>
+    </footer>
 </template>
 
 <!-- JAvaScript -->
@@ -115,7 +115,7 @@ export default {
     @use '../scss/partials/variables' as *;
     @use '../scss/partials/mixins' as *;
 
-    main{
+    footer{
         background-color: $main-color;
         color: white;
     }

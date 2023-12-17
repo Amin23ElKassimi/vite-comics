@@ -2,9 +2,9 @@
 <template lang="">
     <article >
         <img :src="imageSrc" alt="">
-        <h2>
+        <h4>
             {{ title }}
-        </h2>
+        </h4>
         <p>
             {{ type }}
         </p>
@@ -45,8 +45,7 @@ export default {
     @use '../scss/partials/mixins' as *;
 
     article{
-        background-color: white;
-        width: calc((100% / 6) - .3rem) ;
+        width: calc((100% / 6) - .5rem) ;
         margin-right: .15;
         margin-left: .15;
         text-align: center;
@@ -57,12 +56,7 @@ export default {
             height: 200px;
         }
 
-        h2{
-            color: black;
-        }
-        p{
-            color: black;
-        }
+
     }
 
     
