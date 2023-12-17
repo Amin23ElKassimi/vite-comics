@@ -89,8 +89,14 @@ export default {
 
 
     #container {
-        @include my-wrapper();
+        width: 80%;
+        margin: 0 auto;
+        padding: 1rem;
         @include flex(row,space-between,center);
+    }
+
+    .logo img{
+        height: 80px;
     }
 
     ul {

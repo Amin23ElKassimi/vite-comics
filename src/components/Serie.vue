@@ -45,15 +45,14 @@ export default {
     @use '../scss/partials/mixins' as *;
 
     article{
-        width: calc((100% / 6) - .5rem) ;
-        margin-right: .15;
-        margin-left: .15;
+        width: calc((100% / 6) - 2rem) ;
+        margin: 0 1rem;
         text-align: center;
 
 
         img{
             width: 100%;
-            height: 200px;
+            height: 150px;
         }
 
 

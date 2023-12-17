@@ -1,24 +1,23 @@
 <!-- HTML & VUE3 -->
 <template lang="">
     <main>
-
         <!-- Section 01 -->
-        <section class="content">
-            <div id="container">
-                <!-- Serie -->
-                <AppListSeries/>
-            </div>
-         </section>
-
+        <section id="bg-teentitans">
+            <img src="../assets/img/jumbotron.jpg" alt="">
+        </section>
+        <!-- Section 01 -->
+        <section class="container">
+            <!-- Serie -->
+            <AppListSeries/>
+        </section>
          <!-- Section 02 -->
          <section class="cards">
-            <div id="container"> 
+            <div class="container"> 
                 <h1>
                     Content Gooes Here                    
                 </h1>
             </div>
          </section>
-
     </main>
 </template>
 
@@ -52,9 +51,19 @@ export default {
         color: white;
     }
 
-    #container {
+    #bg-teentitans {
+        width: 100%;
+        object-fit: cover;
+        img{
+            height: 500px;
+            width: 100%;
+        }
+    }
+    .container {
         @include my-wrapper();
-        @include flex(column,center,start);
+        @include flex(row, space-evenly, stretch);
+        margin: 0 auto;
+        flex-wrap: wrap;
     }
     .cards{
         background-color: #0282f9;

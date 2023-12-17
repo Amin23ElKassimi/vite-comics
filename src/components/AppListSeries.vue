@@ -1,13 +1,11 @@
 <!-- HTM & Vue -->
 <template lang="">
-        <section class="series">
         <Serie v-for="serie in series"
             :imageSrc="serie.thumb"
             :title="serie.series"
             :type="serie.type"
             :price="serie.price"
         />
-    </section>
 </template>
 
 <!-- JAvaScript -->
@@ -113,12 +111,7 @@ export default {
     @use '../scss/partials/mixins' as *;
 
 
-    section.series{
-    @include flex(row, space-evenly, stretch);
-    width: 80%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
+
 
     
 </style>
