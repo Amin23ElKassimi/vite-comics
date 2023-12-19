@@ -21,9 +21,39 @@
          <!-- Section 02 -->
          <section class="cards">
             <div class="container"> 
-                <h1>
-                    Content Gooes Here                    
-                </h1>
+
+                <div class="bonuscard d-flex align-items-center" >
+                    <div>
+                        <img src="../assets/img/buy-comics-digital-comics.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>DIGITAL COMICS</p>
+                </div>
+                <div class="bonuscard d-flex align-items-center" >
+                    <div>
+                        <img src="../assets/img/buy-comics-merchandise.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>DIGITAL COMICS</p>
+                </div>
+                <div class="bonuscard d-flex align-items-center" >
+                    <div>
+                        <img src="../assets/img/buy-comics-subscriptions.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>DIGITAL COMICS</p>
+                </div>
+                <div class="bonuscard d-flex align-items-center" >
+                    <div>
+                        <img src="../assets/img/buy-comics-shop-locator.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>DIGITAL COMICS</p>
+                </div>
+                <div class="bonuscard d-flex align-items-center" >
+                    <div>
+                        <img src="../assets/img/buy-dc-power-visabuy-comics-digital-comics.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>DIGITAL COMICS</p>
+                </div>
+                
+
             </div>
          </section>
     </main>
@@ -86,6 +116,11 @@ export default {
     }
     .cards{
         background-color: #0282f9;
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
     }
 
     #current-series-button{
@@ -119,6 +154,11 @@ export default {
 
     h1{
         padding: 3rem 0;
+    }
+
+
+    .bonuscard{
+        width: calc(100% / 5);
     }
  
 </style>
