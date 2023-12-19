@@ -76,7 +76,10 @@ export default {
     }
 
     .container {
-        @include my-wrapper();
+        width: 80%;
+        margin: 0 auto;
+        padding: 4rem 0;
+        border-radius: 20px; 
         @include flex(row, center, stretch);
         margin: 0 auto;
         flex-wrap: wrap;
