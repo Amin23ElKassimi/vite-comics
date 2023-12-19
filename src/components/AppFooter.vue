@@ -283,6 +283,7 @@ export default {
 
     ul{
         list-style-type: none;
+        padding: 0;
         li{
             margin-bottom: 0.5rem;
         }
