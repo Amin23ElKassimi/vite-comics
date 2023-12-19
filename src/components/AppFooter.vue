@@ -62,7 +62,10 @@
           <!-- Sign Up Now -->
         <section class="content">
             <div id="container">
-
+                <div class="d-flex justify-content-between align-items-center" role="search">
+                    <div id="sign-btn" type="submit">SIGN-UP NOM!</div>
+                    <div id="follow-info" type="submit">FOLLOW US</div>
+                </div>
             </div>
          </section>
 
@@ -280,6 +283,20 @@ export default {
     a {
         text-decoration: none;
         color: white;
+    }
+
+    #sign-btn{
+        border: 2px solid #0282f9;
+        text-align: center;
+        padding: 1rem;
+        font-weight: bold;
+    }
+
+    #follow-info{
+        color: #0282f9;
+        font-weight: bold;
+        font-size: 1.5rem;
+
     }
 
 </style>

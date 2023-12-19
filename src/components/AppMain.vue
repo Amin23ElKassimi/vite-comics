@@ -9,9 +9,14 @@
             </div>
         </section>
         <!-- Section 01 -->
-        <section class="container">
+        <section >
             <!-- Serie -->
-            <AppListSeries/>
+            <div class="container">
+                <AppListSeries/>
+            </div>
+            <div id="load-more-btn">
+                <a href="#">LOAD MORE</a>
+            </div>
         </section>
          <!-- Section 02 -->
          <section class="cards">
@@ -63,9 +68,16 @@ export default {
             width: 100%;
         }
     }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .container {
         @include my-wrapper();
-        @include flex(row, space-evenly, stretch);
+        @include flex(row, center, stretch);
         margin: 0 auto;
         flex-wrap: wrap;
     }
@@ -80,8 +92,22 @@ export default {
         width: 270px;
         text-align: center;
         position: absolute;
-        top: 485px;
+        top: 483px;
         left: 150px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    #load-more-btn{
+        background-color: #0282f9;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5rem;
+        width: 250px;
+        text-align: center;
+        margin: 2rem;
+        padding: 1rem;
         a{
             text-decoration: none;
             color: white;
