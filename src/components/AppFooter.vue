@@ -64,7 +64,15 @@
             <div id="container">
                 <div class="d-flex justify-content-between align-items-center" role="search">
                     <div id="sign-btn" type="submit">SIGN-UP NOM!</div>
-                    <div id="follow-info" type="submit">FOLLOW US</div>
+                    <div>
+                        <div id="follow-info" type="submit">FOLLOW US </div>
+                        <img src="../assets/img/footer-facebook.png" alt="" class="m-2">
+                        <img src="../assets/img/footer-twitter.png" alt="" class="m-2">
+                        <img src="../assets/img/footer-youtube.png" alt="" class="m-2">
+                        <img src="../assets/img/footer-pinterest.png" alt="" class="m-2">
+                        <img src="../assets/img/footer-periscope.png" alt="" class="m-2">
+
+                    </div>
                 </div>
             </div>
          </section>
@@ -296,7 +304,8 @@ export default {
         color: #0282f9;
         font-weight: bold;
         font-size: 1.5rem;
-
+        display: inline-block;
+        margin-right: 1rem;
     }
 
 </style>
