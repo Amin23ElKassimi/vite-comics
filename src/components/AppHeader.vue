@@ -5,8 +5,8 @@
             <section class="logo">
                 <img src="../assets/img/dc-logo.png" alt="">
             </section>
-            <nav class="navbar">
-                <ul>
+            <nav >
+                <ul class="m-0">
                     <li v-for="(link, index) in navLinks" >
                     {{ link.content}}
                     </li>
